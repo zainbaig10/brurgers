@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins";
+  background:  #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+header {
+  background: #e52d27; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #b31217,
+    #e52d27
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #b31217,
+    #e52d27
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 10px;
+}
+nav {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  text-align: center;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+nav h1 {
+  text-transform: uppercase;
+  line-height: 1em;
+  color: #fff;
+}
+
+nav h1 div:first-child {
+  font-weight: 800;
+  letter-spacing: 1.5px;
+}
+
+nav h1 div:last-child {
+  font-weight: 400;
+}
+nav a {
+    color: #fff;
+}
+
+main {
+  max-width: 1200px;
+  margin: 60px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 250px;
+  gap: 30px;
+}
+main div {
+  overflow: hidden;
+  background:#fcb900;
+  border-radius: 10px;
+  border: 16px solid #fcb900;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
+}
+main img {
+  min-width: 100%;
+  height: 100%;
+}
+
+main .short {
+  grid-row: span 1;
+}
+main .tall {
+  grid-row: span 2;
+}
+footer {
+    grid-column: span 3;
+    text-align: center;
+    padding: 30px;
+    background: #e52d27; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #b31217,
+      #e52d27
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #b31217,
+      #e52d27
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: block;
+    padding: 50px;
+}
+ footer p {
+    color: #ffffff;
+ }
