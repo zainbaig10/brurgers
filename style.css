@@ -3,24 +3,15 @@
 body {
   margin: 0;
   font-family: "Poppins";
-  background:  #8e9eab;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+  background: #8e9eab;
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);
+  background: linear-gradient(to right, #eef2f3, #8e9eab);
 }
 
 header {
-  background: #e52d27; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #b31217,
-    #e52d27
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #b31217,
-    #e52d27
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #e52d27;
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+  background: linear-gradient(to right, #b31217, #e52d27);
 
   padding: 10px;
 }
@@ -51,7 +42,7 @@ nav h1 div:last-child {
   font-weight: 400;
 }
 nav a {
-    color: #fff;
+  color: #fff;
 }
 
 main {
@@ -65,7 +56,7 @@ main {
 }
 main div {
   overflow: hidden;
-  background:#fcb900;
+  background: #fcb900;
   border-radius: 10px;
   border: 16px solid #fcb900;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.05);
@@ -82,23 +73,36 @@ main .tall {
   grid-row: span 2;
 }
 footer {
-    grid-column: span 3;
-    text-align: center;
-    padding: 30px;
-    background: #e52d27; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-      to right,
-      #b31217,
-      #e52d27
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-      to right,
-      #b31217,
-      #e52d27
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    display: block;
-    padding: 50px;
+  grid-column: span 3;
+  text-align: center;
+  padding: 30px;
+  background: #e52d27;
+  background: -webkit-linear-gradient(to right, #b31217, #e52d27);
+  background: linear-gradient(to right, #b31217, #e52d27);
+  display: block;
+  padding: 50px;
 }
- footer p {
-    color: #ffffff;
- }
+footer p {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  main {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 20px;
+  }
+  nav {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  nav h1 {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+}
